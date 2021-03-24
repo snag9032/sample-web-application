@@ -19,13 +19,14 @@
     <finalName>WebApp</finalName>
   </build>
   <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-war-plugin</artifactId>
-  <version>2.2</version>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.1</version>
     <configuration>
-  <source>1.7</source>
-  <target>1.7</target>
-  <failOnMissingWebXml>false</failOnMissingWebXml>
- </configuration>
+        <fork>true</fork>
+        <executable>C:\Program Files\Java\jdk-14.0.2\bin\javac.exe</executable>
+        <source>1.8</source>
+        <target>1.8</target>
+        <compilerArgument>-XDignore.symbol.file</compilerArgument>
+    </configuration>
 </plugin>
 </project>
